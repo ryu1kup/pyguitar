@@ -7,6 +7,6 @@ You can play guitar chords much easily by instantiating Guitar object and using 
 from pyguitar import Guitar
 
 g = Guitar()
-t = 1 # second
+t = 1 # time per a note [sec]
 g.play_chord('C', t)
 ```
