@@ -31,18 +31,19 @@ class Guitar(object):
     def wave(self, frequency, tempo):
         points=np.arange(0, 44100 * tempo)
         sins = [
-                1.0 * np.sin(2 * np.pi * frequency * points / 44100),
-                0.5 * np.sin(4 * np.pi * frequency * points / 44100),
-                0.5 * np.sin(6 * np.pi * frequency * points / 44100),
-                0.3 * np.sin(8 * np.pi * frequency * points / 44100),
-                0.4 * np.sin(10 * np.pi * frequency * points / 44100),
-                0.3 * np.sin(12 * np.pi * frequency * points / 44100),
-                0.01 * np.sin(14 * np.pi * frequency * points / 44100),
-                0.01 * np.sin(16 * np.pi * frequency * points / 44100),
-                0.1 * np.sin(18 * np.pi * frequency * points / 44100),
-                0.2 * np.sin(20 * np.pi * frequency * points / 44100),
-                0.1 * np.sin(22 * np.pi * frequency * points / 44100),
-        ]
+                0.118 * np.sin(1.00*2*np.pi * frequency * points / 44100),
+                0.021 * np.sin(1.46*2*np.pi * frequency * points / 44100),
+                0.636 * np.sin(2.00*2*np.pi * frequency * points / 44100),
+                1.000 * np.sin(3.00*2*np.pi * frequency * points / 44100),
+                0.560 * np.sin(4.00*2*np.pi * frequency * points / 44100),
+                0.131 * np.sin(5.01*2*np.pi * frequency * points / 44100),
+                0.085 * np.sin(6.01*2*np.pi * frequency * points / 44100),
+                0.064 * np.sin(7.03*2*np.pi * frequency * points / 44100),
+                0.032 * np.sin(8.04*2*np.pi * frequency * points / 44100),
+                0.026 * np.sin(9.05*2*np.pi * frequency * points / 44100),
+                0.036 * np.sin(11.10*2*np.pi * frequency * points / 44100),
+                0.022 * np.sin(12.13*2*np.pi * frequency * points / 44100),
+                ]
         sin = np.zeros(len(points))
         for s in sins:
             sin = sin + s
