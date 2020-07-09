@@ -2,7 +2,8 @@
 A brief class for playing guitar chords
 
 ### usage
-You can play guitar chords much easily by instantiating Guitar object and using its method.
+Play guitar chords much easily by instantiating Guitar object and using its method.
+
 ```
 from pyguitar import Guitar
 
